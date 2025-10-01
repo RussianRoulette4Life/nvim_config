@@ -1,0 +1,10 @@
+local function newtab()
+	local pathe = vim.fn.input("Enter path: ")
+	vim.cmd("tabnew" .. pathe)
+end
+vim.keymap.set("n", "<A-n>", newtab)
+vim.keymap.set("n", "<A-Right>", "<Cmd>tabnext<CR>")
+vim.keymap.set("n", "<A-Left>", "<Cmd>tabprevious<CR>")
+vim.cmd.colorscheme("vim")
+
+vim.cmd.set("number relativenumber")
