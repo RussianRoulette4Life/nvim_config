@@ -6,5 +6,5 @@ vim.keymap.set("n", "<A-n>", newtab)
 vim.keymap.set("n", "<A-Right>", "<Cmd>tabnext<CR>")
 vim.keymap.set("n", "<A-Left>", "<Cmd>tabprevious<CR>")
 vim.cmd.colorscheme("vim")
-
+vim.cmd.set("clipboard=unnamedplus")
 vim.cmd.set("number relativenumber")
